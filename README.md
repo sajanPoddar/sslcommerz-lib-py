@@ -18,7 +18,7 @@ https://developer.sslcommerz.com/registration/
 
 ### Create a Initial Payment Request Session 
 
-    from sslcommerz-lib import SSLCOMMERZ 
+    from sslcommerz_lib import SSLCOMMERZ 
     settings = { 'store_id': 'testbox', 'store_pass': 'qwerty', 'issandbox': True }
     sslcommez = SSLCOMMERZ(settings)
     post_body = {}
@@ -44,6 +44,16 @@ https://developer.sslcommerz.com/registration/
 
 
     response = sslcommez.createSession(post_body)
+    print(response)
+
+### Get the status or details of a Payment Request by sessionkey
+
+    from sslcommerz_lib import SSLCOMMERZ 
+    settings = { 'store_id': 'testbox', 'store_pass': 'qwerty', 'issandbox': True }
+    sslcommez = SSLCOMMERZ(settings)
+
+    sessionkey = 'A8EF93B75B8107E4F36049E80B4F9149'
+    response = sslcommez.transaction_query_session(sessionkey)
     print(response)
 
 

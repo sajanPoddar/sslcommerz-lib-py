@@ -6,14 +6,14 @@ setuptools.setup(
     description="SSLCOMERZ PAYMENT GATEWAY",
     long_description=Path("README.md").read_text(),
     author="SSLCOMMERZ Developers",
+    url="https://github.com/sajanPoddar/sslcommerz-lib-py",
     author_email="sajan.sslwireless@gmail.com",
-    keywords=["sslcommerz", "payment", "1.0"],
+    keywords=["sslcommerz", "payment", "1.1"],
     packages=setuptools.find_packages(exclude=["tests", "data"]),
     install_requires=[
         "requests",
     ],
     classifiers=(
-        "Development Status :: Beta",
         'Intended Audience :: Developers',
         'Natural Language :: English',
         "Operating System :: OS Independent",
