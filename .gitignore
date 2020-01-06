@@ -1,2 +1,4 @@
 dist/
 *.egg-info/
+.vscode
+sslcommerz_lib/__pycache__/*
